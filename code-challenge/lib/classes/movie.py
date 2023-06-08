@@ -7,7 +7,6 @@ class Movie:
     
     def __init__(self, title):
         self.title = title
-        self.average = self.average_rating()
         type(self).all.append(self)
 
         
@@ -33,7 +32,7 @@ class Movie:
     
     @classmethod
     def highest_rated(cls):
-        return max(cls.all, key="average")
+        return max(cls.all, key=lambda self: self.average_rating())
     
 from classes.review import Review
 from classes.viewer import Viewer
