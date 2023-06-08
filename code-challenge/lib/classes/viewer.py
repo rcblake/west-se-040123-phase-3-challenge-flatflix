@@ -22,10 +22,10 @@ class Viewer:
         return [review for review in Review.all if review.viewer == self]
     
     def reviewed_movies(self):
-        pass
+        return [review.movie for review in self.reviews()]
     
     def has_reviewed_movie(self, movie):
-        pass
+        return movie in self.reviewed_movies()
 
 from classes.review import Review
 from classes.movie import Movie

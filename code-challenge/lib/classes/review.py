@@ -6,6 +6,7 @@ class Review:
         self.viewer = viewer
         self.movie = movie
         self.rating = rating
+        type(self).all.append(self)
     
     @property
     def viewer(self):
