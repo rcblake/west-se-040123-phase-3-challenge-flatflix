@@ -1,0 +1,62 @@
+Movie
+    title 
+        is a string
+        greater than 0 len
+        raise exception
+
+    all
+        returns all
+
+    average_rating
+        return average of all review ratings
+
+    reviews
+        return all reviews of self
+
+    reviewers
+        return unique list of all viewer who reviewed self    
+
+    cls method
+    highest_rated
+        retrun movie instance with highest average rating
+
+Viewer
+    username
+        is a string
+        between 6 and 16 char inclusive
+        raise exception
+    
+    reviews - method
+        return all reviews by self
+    
+    reviewed_movies
+        return all movies with review by self
+    
+    has_reviewe...
+        retrun boolean if viewer has reviewed movie argument
+
+Review
+    viewer
+        is instance
+        raise exception
+   
+    movie
+        is instance
+        raise exception
+    
+    rating
+        is int 
+        1-5 inclusive
+        raise exception
+    
+    
+
+    
+
+
+
+
+
+
+Bonus:
+viewer.username is unique at setter

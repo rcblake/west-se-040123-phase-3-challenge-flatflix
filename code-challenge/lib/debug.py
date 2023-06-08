@@ -36,8 +36,8 @@ review_5.rating = 1 #=> Should not raise exception
 print(review_5.rating == 1) #=> Should return True given the seeding above
 print(review_1.movie == movie_1) #=> Should return True given the seeding above
 print(review_1.viewer == viewer_1) #=> Should return True given the seeding above
-Review(movie='test', viewer='matteo', rating=4) #=> Should raise exception and please comment it out once verified!
-Review(movie=movie_1, viewer=viewer_1, rating=6) #=> Should raise exception and please comment it out once verified!
+# Review(movie='test', viewer='matteo', rating=4) #=> Should raise exception and please comment it out once verified!
+# Review(movie=movie_1, viewer=viewer_1, rating=6) #=> Should raise exception and please comment it out once verified!
 
 #===============================================================================
 #! Testing Movie class properties and attributes
