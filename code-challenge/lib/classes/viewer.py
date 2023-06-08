@@ -1,7 +1,11 @@
 class Viewer:
     
+    all=[]
+    
     def __init__(self, username):
         self.username = username
+        type(self).all.append(self)
+
     
     @property
     def username(self):
