@@ -20,6 +20,8 @@ viewer_2 = Viewer(username="Sminty")
 viewer_3 = Viewer(username="Podgey")
 viewer_4 = Viewer(username="Trudys")
 
+
+
 # Reviews
 review_1 = Review(movie=movie_1, viewer=viewer_1, rating=5)
 review_2 = Review(movie=movie_1, viewer=viewer_2, rating=4)

@@ -14,7 +14,10 @@ class Viewer:
     @username.setter
     def username(self,username):
         if isinstance(username,str) and 6 <= len(username) <=16:
-            self._username = username
+            if username not in [viewer.username for viewer in Viewer.all]:
+                self._username = username
+            else:
+                raise AttributeError("username already exists")
         else:
             raise AttributeError("Viewer.username must be a str")
     
